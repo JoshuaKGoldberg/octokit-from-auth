@@ -96,6 +96,9 @@ importers:
       prettier-plugin-sh:
         specifier: 0.14.0
         version: 0.14.0(prettier@3.4.2)
+      release-it:
+        specifier: ^17.10.0
+        version: 17.10.0(typescript@5.7.2)
       sentences-per-line:
         specifier: 0.2.1
         version: 0.2.1

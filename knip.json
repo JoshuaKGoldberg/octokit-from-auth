@@ -1,7 +1,6 @@
 {
 	"$schema": "https://unpkg.com/knip@latest/schema.json",
 	"entry": ["src/index.ts!"],
-	"ignoreDependencies": ["@release-it/conventional-changelog"],
 	"ignoreExportsUsedInFile": { "interface": true, "type": true },
 	"project": ["src/**/*.ts!"]
 }
