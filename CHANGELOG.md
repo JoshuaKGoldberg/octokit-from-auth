@@ -1,3 +1,9 @@
+# [0.3.0](https://github.com/JoshuaKGoldberg/octokit-from-auth/compare/0.2.0...0.3.0) (2024-12-16)
+
+### Features
+
+- added octokitFromAuthSafe function ([17a7a21](https://github.com/JoshuaKGoldberg/octokit-from-auth/commit/17a7a2130af0e136c09b726627b34bdcf0a20cc8))
+
 # 0.2.0 (2024-12-15)
 
 ### Bug Fixes
