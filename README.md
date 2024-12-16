@@ -21,13 +21,18 @@
 npm i octokit-from-auth
 ```
 
+Two functions are exported by the `octokit-from-auth` package.
+Both are asynchronous and take in the same constructor parameters as the [`Octokit` class](https://github.com/octokit/octokit.js?tab=readme-ov-file#octokit-api-client):
+
+- `octokitFromAuth`: rejects if an auth token isn't provided and can't be resolved by [`get-github-auth-token`](https://github.com/JoshuaKGoldberg/get-github-auth-token)
+- `octokitFromAuthSafe`: resolves an `Octokit` with no authentication if an auth token isn't provided and can't be resolved by [`get-github-auth-token`](https://github.com/JoshuaKGoldberg/get-github-auth-token)
+
 ```ts
 import { octokitFromAuth } from "octokit-from-auth";
 
-const octokit = await octokitFromAuth();
-
+// auth token used:
 // process.env.GH_TOKEN ?? (await $`gh auth token`)
-console.log(octokit.auth);
+const octokit = await octokitFromAuth();
 ```
 
 The Octokit's `auth` is retrieved with [`get-github-auth-token`](https://github.com/JoshuaKGoldberg/get-github-auth-token), which defaults to `process.env.GH_TOKEN`, or failing that, [`gh auth token`](https://cli.github.com/manual/gh_auth_token).
@@ -36,10 +41,9 @@ If neither is available then an auth token must be provided as an option:
 ```ts
 import { octokitFromAuth } from "octokit-from-auth";
 
-const octokit = await octokitFromAuth({ auth: "gho_..." });
-
+// auth token used:
 // "gho_..."
-console.log(octokit.auth);
+const octokit = await octokitFromAuth({ auth: "gho_..." });
 ```
 
 ## Development
