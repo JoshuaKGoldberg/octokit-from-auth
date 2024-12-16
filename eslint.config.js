@@ -56,6 +56,7 @@ export default tseslint.config(
 		extends: [tseslint.configs.disableTypeChecked],
 		files: ["**/*.md/*.ts"],
 		rules: {
+			"@typescript-eslint/no-unused-vars": "off",
 			"n/no-missing-import": ["error", { allowModules: ["octokit-from-auth"] }],
 		},
 	},

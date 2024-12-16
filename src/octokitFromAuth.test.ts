@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { octokitFromAuth, OctokitOptions } from "./index.js";
+import { octokitFromAuth } from "./octokitFromAuth.js";
+import { OctokitOptions } from "./types.js";
 
 const mockGetGitHubAuthToken = vi.fn();
 
@@ -50,7 +51,7 @@ describe("octokitFromAuth", () => {
 		);
 	});
 
-	it("throws an error an empty auth is provided", async () => {
+	it("throws an error when an empty auth is provided", async () => {
 		await expect(
 			async () => await octokitFromAuth({ auth: "" }),
 		).rejects.toMatchInlineSnapshot(
