@@ -1,6 +1,6 @@
 {
 	"name": "octokit-from-auth",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"description": "Creates a GitHub Octokit instance from any available auth token. 🐙",
 	"repository": {
 		"type": "git",
