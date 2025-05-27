@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.2](https://github.com/JoshuaKGoldberg/octokit-from-auth/compare/0.3.1...0.3.2) (2025-05-27)
+
+### Bug Fixes
+
+- **deps:** update dependency octokit to v5 ([#87](https://github.com/JoshuaKGoldberg/octokit-from-auth/issues/87)) ([b0f2cc7](https://github.com/JoshuaKGoldberg/octokit-from-auth/commit/b0f2cc728557a12010134367055b14ce79c3dfdc))
+
 ## [0.3.1](https://github.com/JoshuaKGoldberg/octokit-from-auth/compare/0.3.0...0.3.1) (2025-04-01)
 
 ### Bug Fixes
