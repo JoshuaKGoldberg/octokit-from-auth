@@ -26,6 +26,5 @@
   ],
   "projectName": "octokit-from-auth",
   "projectOwner": "JoshuaKGoldberg",
-  "repoType": "github",
-  "commitConvention": "angular"
+  "repoType": "github"
 }

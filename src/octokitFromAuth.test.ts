@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { octokitFromAuth } from "./octokitFromAuth.js";
-import { OctokitOptions } from "./types.js";
+import { octokitFromAuth } from "./octokitFromAuth.ts";
+import { OctokitOptions } from "./types.ts";
 
 const mockGetGitHubAuthToken = vi.fn();
 
@@ -24,16 +24,14 @@ vi.mock("octokit", () => ({
 const auth = "gho_abc123";
 const baseUrl = "https://example.com";
 
-describe("octokitFromAuth", () => {
+describe(octokitFromAuth, () => {
 	it("throws an error when no options are provided and auth is not available", async () => {
 		mockGetGitHubAuthToken.mockResolvedValueOnce({
 			succeeded: false,
 			token: auth,
 		});
 
-		await expect(
-			async () => await octokitFromAuth(),
-		).rejects.toMatchInlineSnapshot(
+		await expect(octokitFromAuth()).rejects.toMatchInlineSnapshot(
 			`[Error: Please provide an auth token (process.env.GH_TOKEN) or log in with the GitHub CLI (gh).]`,
 		);
 	});
@@ -44,17 +42,13 @@ describe("octokitFromAuth", () => {
 			token: auth,
 		});
 
-		await expect(
-			async () => await octokitFromAuth({}),
-		).rejects.toMatchInlineSnapshot(
+		await expect(octokitFromAuth({})).rejects.toMatchInlineSnapshot(
 			`[Error: Please provide an auth token (process.env.GH_TOKEN) or log in with the GitHub CLI (gh).]`,
 		);
 	});
 
 	it("throws an error when an empty auth is provided", async () => {
-		await expect(
-			async () => await octokitFromAuth({ auth: "" }),
-		).rejects.toMatchInlineSnapshot(
+		await expect(octokitFromAuth({ auth: "" })).rejects.toMatchInlineSnapshot(
 			`[Error: Invalid auth provided: an empty string ('').]`,
 		);
 		expect(mockGetGitHubAuthToken).not.toHaveBeenCalled();
