@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.4](https://github.com/JoshuaKGoldberg/octokit-from-auth/compare/0.3.3...0.3.4) (2026-11-24)
+
+### Bug Fixes
+
+- **deps:** update dependency get-github-auth-token to ^0.2.0 ([#432](https://github.com/JoshuaKGoldberg/octokit-from-auth/issues/432)) ([6e2ffc5](https://github.com/JoshuaKGoldberg/octokit-from-auth/commit/6e2ffc57550d2844cb1b9e4dc4faea59917edf13))
+
 ## [0.3.3](https://github.com/JoshuaKGoldberg/octokit-from-auth/compare/0.3.2...0.3.3) (2026-11-24)
 
 ### Bug Fixes
