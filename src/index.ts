@@ -1,3 +1,3 @@
-export * from "./octokitFromAuth.js";
-export * from "./octokitFromAuthSafe.js";
-export type * from "./types.js";
+export * from "./octokitFromAuth.ts";
+export * from "./octokitFromAuthSafe.ts";
+export type * from "./types.ts";

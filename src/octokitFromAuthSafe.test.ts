@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { octokitFromAuthSafe } from "./octokitFromAuthSafe.js";
-import { OctokitOptions } from "./types.js";
+import { octokitFromAuthSafe } from "./octokitFromAuthSafe.ts";
+import { OctokitOptions } from "./types.ts";
 
 const mockGetGitHubAuthToken = vi.fn();
 
@@ -24,7 +24,7 @@ vi.mock("octokit", () => ({
 const auth = "gho_abc123";
 const baseUrl = "https://example.com";
 
-describe("octokitFromAuthSafe", () => {
+describe(octokitFromAuthSafe, () => {
 	it("creates an Octokit without auth when no options are provided and auth is not available", async () => {
 		mockGetGitHubAuthToken.mockResolvedValueOnce({
 			succeeded: false,

@@ -1,7 +1,7 @@
 import { getGitHubAuthToken } from "get-github-auth-token";
 import { Octokit } from "octokit";
 
-import { OctokitOptions } from "./types.js";
+import { OctokitOptions } from "./types.ts";
 
 export async function octokitFromAuthSafe(
 	options?: OctokitOptions,
