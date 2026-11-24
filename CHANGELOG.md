@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.3](https://github.com/JoshuaKGoldberg/octokit-from-auth/compare/0.3.2...0.3.3) (2026-11-24)
+
+### Bug Fixes
+
+- bump to create-typescript-app@2.87.18 ([#426](https://github.com/JoshuaKGoldberg/octokit-from-auth/issues/426)) ([c26a333](https://github.com/JoshuaKGoldberg/octokit-from-auth/commit/c26a333863968de402077746262d248422e1a6f2)), closes [#425](https://github.com/JoshuaKGoldberg/octokit-from-auth/issues/425)
+
 ## [0.3.2](https://github.com/JoshuaKGoldberg/octokit-from-auth/compare/0.3.1...0.3.2) (2025-05-27)
 
 ### Bug Fixes
