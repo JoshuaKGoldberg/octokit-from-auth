@@ -32,7 +32,7 @@
 		"tsc": "tsc"
 	},
 	"dependencies": {
-		"get-github-auth-token": "^0.1.0",
+		"get-github-auth-token": "^0.2.0",
 		"octokit": "^5.0.0"
 	},
 	"devDependencies": {
